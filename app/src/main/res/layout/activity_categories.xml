@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriesActivity"
+    android:background="@color/palletteback">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/wave">
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Choose Your Field"
+            android:textColor="@color/textcolor"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp">
+        </TextView>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:paddingTop="120dp"
+        android:columnCount="2"
+        >
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/economicsCard"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/white"
+            >
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/economics"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Economics"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/statisticsCard"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/statistics"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Statistics"
+                android:textStyle="bold"
+                android:textColor="@color/teal_200"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/electricalCard"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/electric"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electrical Engineering"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="8dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mechanicCard"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mechanics"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mechanics Engineering"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="8dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/SecretaryCard"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/assistant"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Assistance"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/softwareCard"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/software"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Engineering"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:textStyle="bold"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ArchitectCard"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/architect"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Architecture"
+                android:textColor="@color/purple_200"
+                android:textStyle="bold"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="10dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/JournalistCard"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/journalism"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journalism"
+                android:textColor="@color/material_dynamic_neutral60"
+                android:textStyle="bold"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/palletteback">
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/backCatBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/back"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/profile_employer"
+                    android:layout_margin="5dp"
+                    android:id="@+id/employeeProfileBtn"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints"
+            card_view:cardBackgroundColor="@color/palletteback">
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/AddCatBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/add"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/logoutCatBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/logout"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

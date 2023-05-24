@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddApplicationActivity"
+    android:background="@color/palletteback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/wave"
+        tools:ignore="MissingConstraints" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:columnCount="1">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:text="New Application"
+           android:gravity="center"
+           android:layout_marginTop="20dp"
+           android:textSize="20dp"
+           android:textColor="@color/textcolor"
+           android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Job Title:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                android:id="@+id/applyJob"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Email:"
+                android:inputType="textEmailAddress"
+
+                android:textColor="@color/black"/>
+            <EditText
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                android:id="@+id/applyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Name:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                android:id="@+id/applyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Speciality:"
+                android:textColor="@color/black"/>
+            <Spinner
+                android:background="@color/white"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:id="@+id/Applyspeciality"
+                android:layout_below="@+id/ch"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Phone Number:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                android:id="@+id/Applyphone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="About:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                android:id="@+id/applyAbout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/backAppBtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/back"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/resetAppBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/reset"/>
+
+            <Button
+                android:id="@+id/submitAppBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/add"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/homeAppBtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/home"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

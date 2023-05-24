@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:columnCount="1"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/JournalistCard"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/white"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/appjob"
+                android:hint="Job Title"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/delete"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:id="@+id/deleteapp"
+                />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/appspec"
+                android:hint="Speciality"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="170dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/appdate"
+                android:hint="Date Begin"
+                android:textColor="@color/black"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="170dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/appemail"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="170dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

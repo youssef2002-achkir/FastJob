@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "770163443888",
+    "firebase_url": "https://appro-fa64d-default-rtdb.firebaseio.com",
+    "project_id": "appro-fa64d",
+    "storage_bucket": "appro-fa64d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770163443888:android:764a6fa5db11fd1ca79375",
+        "android_client_info": {
+          "package_name": "com.example.job_portal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770163443888-a537ttmqcte19nt1e7inc2r5eb21qodu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXpaWAQ-ZmKdo5hDgiXVAa-xYBYdKEtFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770163443888-a537ttmqcte19nt1e7inc2r5eb21qodu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

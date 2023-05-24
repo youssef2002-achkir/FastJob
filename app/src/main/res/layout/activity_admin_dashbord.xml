@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDashbordActivity"
+    android:background="@color/palletteback">
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/bluesky">
+
+        <Button
+            android:id="@+id/dashBACK"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DASHBOARD"
+            android:gravity="center"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/rate"
+            android:id="@+id/DASHRATE"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="80dp"
+        android:scrollbars="vertical"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            android:columnCount="1"
+            >
+
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/manage"
+                    android:id="@+id/manageeconomics"/>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/buttonBack"
+                    android:id="@+id/offereconomics"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp"
+                    android:background="@color/buttonBack"
+                    android:id="@+id/appeconomics"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/delete"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/manage"
+                    android:id="@+id/managestat"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/buttonBack"
+                    android:id="@+id/offerstat"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp"
+                    android:background="@color/buttonBack"
+                    android:id="@+id/appstat"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/delete"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/manage"
+                    android:id="@+id/managesoftware"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/buttonBack"
+                    android:id="@+id/offersoft"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp"
+                    android:background="@color/buttonBack"
+
+                    android:id="@+id/appsoft"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/delete"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/manage"
+                    android:id="@+id/manageelect"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/buttonBack"
+
+                    android:id="@+id/offerelect"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp"
+                    android:background="@color/buttonBack"
+
+                    android:id="@+id/appelect"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/delete"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/manage"
+                    android:id="@+id/managemechanics"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/buttonBack"
+
+                    android:id="@+id/offermechanics"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp"
+                    android:background="@color/buttonBack"
+
+                    android:id="@+id/appmechanics"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/delete"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/manage"
+                    android:id="@+id/manageearchitecture"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/buttonBack"
+                    android:id="@+id/offerarchitec"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp"
+                    android:background="@color/buttonBack"
+                    android:id="@+id/apparchitect"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/delete"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/manage"
+                    android:id="@+id/manageassistant"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/buttonBack"
+
+                    android:id="@+id/offerassist"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp"
+                    android:background="@color/buttonBack"
+
+                    android:id="@+id/appassist"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/delete"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/manage"
+                    android:id="@+id/manageejournal"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/buttonBack"
+                    android:id="@+id/offerjournal"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp"
+                    android:background="@color/buttonBack"
+                    android:id="@+id/appjournal"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/delete"/>
+
+            </LinearLayout>
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
