@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployerOffersActivity"
+    android:background="@color/palletteback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:background="@drawable/wave">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="80dp"
+        android:scrollbars="vertical"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/Offercontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/buttonBack">
+
+
+        <Button
+            android:id="@+id/offerbackBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back"
+            android:layout_margin="10dp"/>
+
+
+
+        <Button
+            android:id="@+id/offerAddBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/add"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/profile_employer"
+            android:layout_margin="10dp"
+            android:id="@+id/employerprobtn"/>
+        <Button
+            android:id="@+id/offerlogoutBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logout"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

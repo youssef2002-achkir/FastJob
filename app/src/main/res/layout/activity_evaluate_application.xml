@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EvaluateApplicationActivity"
+    android:background="@color/palletteback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/wave"
+        tools:ignore="MissingConstraints" />
+
+    <GridLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:columnCount="1">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Name:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/rateName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="App Flow:"
+                android:textColor="@color/black"/>
+            <CheckBox
+                android:id="@+id/goodRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Good"
+                android:textColor="@color/textcolor"/>
+            <CheckBox
+                android:id="@+id/badRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Bad"
+                android:textColor="@color/textcolor"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Learnability"
+                android:textColor="@color/black"/>
+            <CheckBox
+                android:id="@+id/easyRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Easy"
+                android:textColor="@color/textcolor"/>
+            <CheckBox
+                android:id="@+id/hardRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Hard"
+                android:textColor="@color/textcolor"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Satisfaction:"
+                android:textColor="@color/black"/>
+            <CheckBox
+                android:id="@+id/OneRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="1"
+                android:textColor="@color/textcolor"/>
+            <CheckBox
+                android:id="@+id/ThreeRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="3"
+                android:textColor="@color/textcolor"/>
+            <CheckBox
+                android:id="@+id/FiveRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="5"
+                android:textColor="@color/textcolor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Comments:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                android:id="@+id/commentRate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxLength="35"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/backRateBtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/back"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/submitRateBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/add"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
